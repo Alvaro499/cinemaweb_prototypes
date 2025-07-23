@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/index/index.css" />
+    <link rel="stylesheet" href="assets/css/index/hero.css">
+    <link rel="stylesheet" href="assets/css/index/info-movies.css">
+    <link rel="stylesheet" href="assets/css/index/info-cards.css">
+    <link rel="stylesheet" href="assets/css/index/comment-sections.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+
+    <title>Document</title>
+
+
+</head>
+
+<body>
+
+    <div class="global-container">
+        <header id="global-navbar">
+
+            <div class="header-logo">
+                <img src="assets/logo/logo.svg" alt="logo">
+            </div>
+
+            <nav>
+
+                <label for="menu-toggle" class="menu-btn">
+                    <i class="material-symbols-outlined">menu</i>
+                    <span>Menú</span>
+                </label>
+
+                <input type="checkbox" id="menu-toggle" hidden>
+
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Acerca de</a></li>
+                    <li><a href="">Ver Cartelera</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Crea una cuenta</a></li>
+                </ul>
+
+            </nav>
+
+            <button class="login-btn">Iniciar Sesión</button>
+
+        </header>
+
+        <main class="main">
+
+            <!-- Hero/banner section -->
+            <section class="hero">
+
+                <div class="hero__top">
+                    <div class="hero__content">
+                        <h1 class="hero__title">
+                            La magia del cine cerca de ti
+                        </h1>
+
+                        <p class="hero__description">
+                            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
+                        </p>
+                    </div>
+
+                    <div class="hero__socials">
+                        <i class="material-icons hero__icon">facebook</i>
+                        <i class="material-icons hero__icon">twitter</i>
+                        <i class="material-icons hero__icon">instagram</i>
+                        <i class="material-icons hero__icon">youtube</i>
+                    </div>
+                </div>
+
+                <form class="hero__form" action="#">
+                    <h4 class="hero__form-title">¿Algo en particular que te gustaría ver?</h4>
+                    <div class="hero__form-fields">
+                        <input type="text" id="title" name="title" placeholder="Título:">
+                        <select id="genre" name="genre">
+                            <option value="" disabled selected hidden>Géneros</option>
+                            <option value="accion">Acción</option>
+                            <option value="comedia">Comedia</option>
+                            <option value="drama">Drama</option>
+                        </select>
+
+                        <button class="hero__submit" type="submit">
+                            <i class="material-symbols-outlined hero__icon">search</i>
+                            <span>Buscar</span>
+                        </button>
+                    </div>
+                </form>
+
+            </section>
+
+            <section class="info__movies">
+                <div class="info__movies-header">
+                    <h3>Mira nuestros último estrenos</h3>
+                </div>
+
+                <div class="info__movies-body">
+                    <div class="info__movies-item">
+                        <div class="info__movies-img">
+                            <img src="assets/images/index/superman_2025.png" alt="">
+                        </div>
+                        <div class="info__movies-content">
+                            <h4>Superman 2025</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="info__movies-item">
+                        <div class="info__movies-img">
+                            <img src="assets/images/index/fantastic_four.png" alt="">
+                        </div>
+
+                        <div class="info__movies-content">
+                            <h4>Los Cuatro Fantásticos: Primeros Pasos</h4>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info__movies-item">
+                        <div class="info__movies-img">
+                            <img src="assets/images/index/ballerina.jpg" alt="">
+                        </div>
+                        <div class="info__movies-content">
+                            <h4>Ballerina</h4>
+                        </div>
+                    </div>
+
+                    <div class="info__movies-item">
+                        <div class="info__movies-img">
+                            <img src="assets/images/index/sinners.png" alt="">
+                        </div>
+                        <div class="info__movies-content">
+                            <h4>Sinners</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section class="info__cards">
+
+                <div class="info__cards-header">
+                    <div class="info-cards_br"></div>
+                    <h2>lorem ipsum impsum</h2>
+                    <p>Labore inventore nihil natus sunt fugit tempora laboriosam explicabo repellendus omnis cum
+                        sapiente</p>
+                </div>
+
+                <div class="info__cards-body">
+                    <div class="info__cards-item">
+                        <div class="info__cards-image">
+                            <img src="assets/images/index/parqueo.jpg" alt="">
+
+                        </div>
+                        <div class="info__cards-content">
+                            <h4>Parqueo</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem iusto debitis sed
+                                accusamus, cupiditate tempora cum expedita deleniti id.
+                            </p>
+                        </div>
+                        <div class="info_cards-icon">
+                            <i class="material-symbols-outlined">parking_meter</i>
+                        </div>
+
+                    </div>
+
+                    <div class="info__cards-item">
+                        <div class="info__cards-image">
+                            <img src="assets/images/index/restaurant.avif" alt="">
+
+                        </div>
+                        <div class="info__cards-content">
+                            <h4>Restaurante</h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus sapiente nobis incidunt,
+                                iste consequatur quae.
+                            </p>
+                        </div>
+
+                        <div class="info_cards-icon">
+                            <i class="material-symbols-outlined">
+                                restaurant
+                            </i>
+                        </div>
+                    </div>
+
+                    <div class="info__cards-item">
+                        <div class="info__cards-image">
+                            <img src="assets/images/index/parqueo.jpg" alt="">
+
+                        </div>
+                        <div class="info__cards-content">
+                            <h4>Zona de juegos</h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus sapiente nobis incidunt,
+                                iste consequatur quae.
+                            </p>
+                        </div>
+                        <div class="info_cards-icon">
+                            <i class="material-symbols-outlined">stadia_controller</i>
+                        </div>
+
+                    </div>
+
+                    <div class="info__cards-item">
+                        <div class="info__cards-image">
+                            <img src="assets/images/index/store.avif" alt="">
+
+                        </div>
+                        <div class="info__cards-content">
+                            <h4>Tiendas</h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus sapiente nobis incidunt,
+                                iste consequatur quae.
+                            </p>
+                        </div>
+                        <div class="info_cards-icon">
+                            <i class="material-symbols-outlined">storefront</i>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="comment__section">
+                <h2 class="comment__section-title">Lorem ipsum is simply dummy text of the printing and typesetting
+                    industry </h2>
+                <div class="comment__section-list">
+                    <div class="comment__section-item">
+                        <div class="comment__section-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem blanditiis provident
+                                deleniti corrupti dicta. Consequatur est culpa ratione fugit deserunt nesciunt et
+                                similique. Voluptatum fuga atque quia magnam, placeat fugiat.</p>
+                        </div>
+                        <div class="comment__section-user">
+                            <p>Lorna2502</p>
+                            <div>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment__section-item">
+                        <div class="comment__section-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem blanditiis provident
+                                deleniti corrupti dicta. Consequatur est culpa ratione fugit deserunt nesciunt et
+                                similique. Voluptatum fuga atque quia magnam, placeat fugiat.</p>
+                        </div>
+                        <div class="comment__section-user">
+                            <p>TíoChuck</p>
+                            <div>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment__section-item">
+                        <div class="comment__section-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem blanditiis provident
+                                deleniti corrupti dicta. Consequatur est culpa ratione fugit deserunt nesciunt et
+                                similique. Voluptatum fuga atque quia magnam, placeat fugiat.</p>
+                        </div>
+                        <div class="comment__section-user">
+                            <p>Silex799</p>
+                            <div>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment__section-item">
+                        <div class="comment__section-content">
+                            <p>Buen Servicio</p>
+                        </div>
+                        <div class="comment__section-user">
+                            <p>Silex799</p>
+                            <div>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment__section-item">
+                        <div class="comment__section-content">
+                            <p>Buen Servicio</p>
+                        </div>
+                        <div class="comment__section-user">
+                            <p>Silex799</p>
+                            <div>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment__section-item">
+                        <div class="comment__section-content">
+                            <p>Buen Servicio</p>
+                        </div>
+                        <div class="comment__section-user">
+                            <p>Silex799</p>
+                            <div>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+        <footer>
+
+            <section class="footer__header">
+                <div class="footer__header-title">
+                    <h4>Visítanos en nuestras redes sociales:</h4>
+                </div>
+                <div class="footer__header-social">
+                    <ul>
+                        <li>
+                            <a href="">📘</a>
+                        </li>
+                        <li>
+                            <a href="">📺</a>
+                        </li>
+                        <li>
+                            <a href="">❌</a>
+                        </li>
+                        <li>
+                            <a href="">📸</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="footer__main">
+                <div class="footer__content">
+
+                    <div class="footer__content-item footer__content-us">
+                        <h4 class="footer__content-title">Nos interesa tu opinión</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis elementum purus eu
+                            ultricies. Ut bibendum velit semper, consectetur magna.</p>
+                    </div>
+
+                    <div class="footer__content-item footer__content-links">
+                        <h4 class="footer__content-title">Más Información</h4>
+                        <ul>
+                            <li><a href="#">Registrarse como miembro</a></li>
+                            <li><a href="#">Centro de Ayuda</a></li>
+                            <li><a href="#">Política y Privacidad</a></li>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                        </ul>
+                    </div>
+
+                    <div class=" footer__content-item footer__content-contact">
+                         <h4 class="footer__content-title">Contáctanos</h4>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="material-symbols-outlined">location_on</i> Dirección
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+123456789">
+                                    <i class="material-symbols-outlined">call</i> Teléfono
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:correo@ejemplo.com">
+                                    <i class="material-symbols-outlined">mail</i> Correo electrónico
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="material-symbols-outlined">edit_note</i> Formulario de contacto
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer__">
+                <p> 2025 Todos los derechos reservados. CINETICOS</p>
+            </section>
+
+        </footer>
+    </div>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("global-navbar").style.top = "0";
+            } else {
+                document.getElementById("global-navbar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+
+
+
+
+</html>

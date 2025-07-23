@@ -1,0 +1,171 @@
+.main {
+
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+
+.info__cards{
+    width: 100%;
+    height: auto;
+}
+
+.info__cards-header{
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    font-size: 1rem;
+    padding: 8em 1em;
+
+}
+
+
+.info-cards_br {
+    width: 15%;
+    height: 5px;
+    background-color: var(--primary-color);
+    border-radius: 5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info__cards-header > *{
+    
+    margin: 1em 0;
+}
+
+.info__cards-header h2{
+    
+    font-size: 2em;
+}
+
+.info__cards-header p{
+    
+    font-size: 1.4em;
+}
+
+.info__cards-body{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 4rem;
+    column-gap: 2rem;
+    padding: 6em 2em;
+    background-color: var(--one-color);
+}
+
+
+.info__cards-item{
+    width: 300px;
+    height: 500px;
+    font-size: 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    cursor: pointer;
+
+}
+
+
+.info__cards-image{
+    width: 100%;
+    height: 75%;
+}
+
+.info__cards-image{
+
+    object-fit: cover;
+}
+
+
+.info__cards-content{
+    background-color: #f5f6f8;
+    padding: 0.5em;
+    height: 25%;
+    font-size: 1em;
+    justify-self: stretch;
+    align-self: stretch;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.info__cards-item:hover .info__cards-content {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+
+.info_cards-icon{
+
+    background-color: var(--secondary-color);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.info_cards-icon{
+
+    background-color: var(--secondary-color);
+    opacity: 70%;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    position: absolute;
+    font-size: 2rem;
+    top: 0;
+    left: 50%;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__cards-item:hover .info_cards-icon{
+        opacity: 100%;
+
+}
+
+
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: green;
+}
+
+
+@media (min-width: 768px) {
+
+    .info__cards-header{
+        font-size: 1.4rem;
+    }
+
+    .info__cards-item{
+        width: 500px;
+        height: 500px;
+        font-size: 1.2rem;
+
+    }
+
+    .info__cards-image{
+        height: 65%;
+    }
+
+    .info__cards-content{
+        height: 35%;
+    }
+
+}

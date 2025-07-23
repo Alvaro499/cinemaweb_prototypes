@@ -1,0 +1,151 @@
+footer{
+   width: 100%; 
+   margin-top: 300px  
+}
+
+.footer__header{
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5em 1.5em;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.footer__header-title{
+    width: 100%;
+    font-size: 1rem;
+    color: var(--text-white-color);
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.footer__header-social{
+    width: 100%;
+    font-size: 1rem;
+    margin: 0.5em 0;
+
+}
+
+.footer__header-social ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: center;
+}
+
+.footer__header-social ul li{
+    color: var(--text-white-color);
+    font-size: 1rem;
+    margin: 0 1em;
+}
+
+.footer__header-social ul li a{
+    font-size: 1em;
+}
+
+.footer__main{
+    width: 100%;
+    padding: 0.5em 1.5em;
+    background-color: var(--primary-color-dark);
+}
+
+.footer__content{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    align-items: center;
+    color: var(--text-white-color);
+}
+
+.footer__content-item{
+    width: 100%;
+    max-height: 400px;
+    font-size: 1rem;
+    padding: 1em 1em;
+    text-align: center;
+}
+
+.footer__content-item ul{
+    width: auto;
+    display: inline-flex;
+    flex-flow: column nowrap;
+}
+
+
+.footer__content-item ul li{
+    width: auto;
+    padding: 5px 0;
+    display: inline-block;
+}
+
+
+.footer__content-title{
+    font-size: 1.2em;
+    padding: 1.5em 0;
+    color: var(--text-dark-white-color);
+
+}
+
+
+.footer__content-contact ul a > *{
+
+    padding: 0 5px;
+
+}
+
+
+.footer__{
+    color: var(--text-white-color);
+    padding: 1rem;
+    padding: 2em;
+    background-color: var(--primary-color-dark);
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    
+    .footer__header{
+
+        font-size: 2rem;
+        padding: 0.2em 1em;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .footer__header-title{
+        text-align: left;
+    }
+
+    .footer__content-us p{
+        text-align: left;
+    }
+
+    .footer__header-social ul{
+
+        margin: 0 1rem;
+        justify-content: right;
+
+    }
+
+    .footer__content{
+        flex-flow: nowrap;
+        align-items: space-between;
+    }
+
+    .footer__content-item{
+        width: 33%;
+        max-height: 500px;
+        text-align: left;
+    }
+
+    .footer__content-us p{
+        width: 75%;
+    }
+}

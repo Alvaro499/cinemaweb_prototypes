@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap');
+
+
+/*
+
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeue-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-VariableFont_wdth,wght.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Italic-VariableFont_wdth,wght.woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+*/
+
+
+:root {
+  --primary-color: #0A2472;
+  --primary-color-dark: #00072D;
+  --secondary-color: #0E6BA8;
+  --tertiary-color: #001c55;
+  --one-color: #fff;
+
+  --primary-color-rgb: 10, 36, 114;
+  --primary-color-dark-rgb: 0, 7, 45;
+
+
+  --text-white-color: #ffffff;
+  --background-text-white-color: #f4f4f4;
+  --text-dark-white-color: #B0B3B8;
+
+  --font-title: 'Bebas Neue', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* Rutas */
+}
+
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%; /*html: hijo del viewport (ventana del navegador)*/
+    line-height: 1.4;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+a, p, span{
+    text-decoration: none;
+    color: inherit;
+    font-family: var(--font-body);
+}
+
+h1,h2,h3,h4,h5{
+  font-family: var(--font-title);
+  letter-spacing: 2px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+input, select{
+  border: none;
+}
+
+input::placeholder{
+  color: #888;
+}
+
+select option[disabled] {
+  color: #888;
+}
+
+
+.global-container{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
