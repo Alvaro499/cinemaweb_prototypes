@@ -1,0 +1,136 @@
+.main {
+
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+
+.hero__banner {
+    width: 100%;
+    min-height: 80vh;
+    background: linear-gradient(
+        180deg,
+        rgba(10, 36, 114, 1) 0%,
+        rgba(5, 20, 90, 1) 40%,
+        rgba(0, 7, 45, 1) 100%
+    );
+
+    position: relative;
+}
+
+.hero__banner{
+    width: 100%;
+    height: auto;
+    color: var(--text-white-color);
+    padding: 20vh 2em;
+}
+
+.hero__banner h2{
+    margin: 25px 0;
+}
+
+.hero__banner p{
+    margin: 25px 0;
+    width: 100%;
+}
+
+ .form{
+    margin: 40px auto;
+    padding: 3rem 1.5rem;
+    background-color: var(--text-white-color);
+    width: min(350px, 90%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #000 ;
+
+}
+
+.form__title{
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.form__inputs{
+    margin: 2rem 0 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+    color: #6b6b6b;
+}
+
+.form__label {
+    position: relative;
+}
+
+.form__input {
+    grid-area: input;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #d7d0d0;
+    padding: .7em 1.5em;
+}
+
+.form__text {
+    grid-area: input;
+    z-index: 100;
+    width: max-content;
+    height: max-content;
+    margin-left: 1rem;
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    transform-origin: left center;
+    transition: transform 0.3s;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(1rem, 0.7em);
+}
+
+.form__input:focus + .form__text,
+.form__input:not(:placeholder-shown) + .form__text {
+    background-color: var(--text-white-color);
+    transform: translate(1rem, -50%) scale(0.7);
+}
+
+.form__submit{
+    display: inline-block;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+    color: var(--text-white-color);
+    border: none;
+}
+
+.form__submit:hover{
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+
+    .hero__banner p{
+
+        width: 50%;
+    }
+    .form{
+        position: absolute;
+        top: 50%;
+        right: 10%;
+    }
+
+    .form__title{
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .form{
+        top: 50%;
+        right: 20%;
+    }
+}

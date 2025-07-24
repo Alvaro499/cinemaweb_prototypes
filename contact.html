@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/contact/contact.css" />
+    <link rel="stylesheet" href="assets/css/contact/contact-form.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+
+    <title>Document</title>
+
+
+</head>
+
+
+<body>
+
+    <div class="global-container">
+        <header id="global-navbar">
+
+            <div class="header-logo">
+                <img src="assets/logo/logo.svg" alt="logo">
+            </div>
+
+            <nav>
+
+                <label for="menu-toggle" class="menu-btn">
+                    <i class="material-symbols-outlined">menu</i>
+                    <span>Menú</span>
+                </label>
+
+                <input type="checkbox" id="menu-toggle" hidden>
+
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="">Acerca de</a></li>
+                    <li><a href="">Ver Cartelera</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="">Crea una cuenta</a></li>
+                </ul>
+
+            </nav>
+
+            <button class="login-btn">Iniciar Sesión</button>
+
+        </header>
+
+        <main class="main">
+            <section class="hero__banner">
+                <h2>Contáctanos</h2>
+                <p>Cualquier duda, consulta o crítica que tengas, nos la puedes enviar a nuestro correo desde el
+                    siguiente correo</p>
+            </section>
+
+            <form class="form" action="Consultar">
+                <h4 class="form__title">Formulario de Contacto</h4>
+
+                <div class="form__inputs">
+                    <label for="" class="form__label">
+                        <input type="text" class="form__input" placeholder=" ">
+                        <span class="form__text">Escribe tu nombre completo</span>
+                    </label>
+
+
+                    <label for="" class="form__label">
+                        <input type="text" class="form__input" placeholder=" ">
+                        <span class="form__text">Escribe el tema de tu consulta</span>
+                    </label>
+
+                    <label for="" class="form__label">
+                        <textarea class="form__input" placeholder=" " rows="4"></textarea>
+                        <span class="form__text">Escribe tu consulta</span>
+                    </label>
+
+                </div>
+
+                <input type="submit" value="Enviar" class="form__submit">
+            </form>
+        </main>
+
+
+        <footer>
+
+            <section class="footer__header">
+                <div class="footer__header-title">
+                    <h4>Visítanos en nuestras redes sociales:</h4>
+                </div>
+                <div class="footer__header-social">
+                    <ul>
+                        <li>
+                            <a href="">📘</a>
+                        </li>
+                        <li>
+                            <a href="">📺</a>
+                        </li>
+                        <li>
+                            <a href="">❌</a>
+                        </li>
+                        <li>
+                            <a href="">📸</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="footer__main">
+                <div class="footer__content">
+
+                    <div class="footer__content-item footer__content-us">
+                        <h4 class="footer__content-title">Nos interesa tu opinión</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis elementum purus eu
+                            ultricies. Ut bibendum velit semper, consectetur magna.</p>
+                    </div>
+
+                    <div class="footer__content-item footer__content-links">
+                        <h4 class="footer__content-title">Más Información</h4>
+                        <ul>
+                            <li><a href="#">Registrarse como miembro</a></li>
+                            <li><a href="#">Centro de Ayuda</a></li>
+                            <li><a href="#">Política y Privacidad</a></li>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                        </ul>
+                    </div>
+
+                    <div class=" footer__content-item footer__content-contact">
+                        <h4 class="footer__content-title">Contáctanos</h4>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="material-symbols-outlined">location_on</i> Dirección
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+123456789">
+                                    <i class="material-symbols-outlined">call</i> Teléfono
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:correo@ejemplo.com">
+                                    <i class="material-symbols-outlined">mail</i> Correo electrónico
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="material-symbols-outlined">edit_note</i> Formulario de contacto
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer__">
+                <p> 2025 Todos los derechos reservados. CINETICOS</p>
+            </section>
+
+        </footer>
+    </div>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("global-navbar").style.top = "0";
+            } else {
+                document.getElementById("global-navbar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+
+
+
+
+</html>
