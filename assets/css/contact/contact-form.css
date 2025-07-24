@@ -18,14 +18,13 @@
     );
 
     position: relative;
-}
 
-.hero__banner{
     width: 100%;
     height: auto;
     color: var(--text-white-color);
     padding: 20vh 2em;
 }
+
 
 .hero__banner h2{
     margin: 25px 0;
@@ -97,6 +96,7 @@
 .form__submit{
     display: inline-block;
     border-radius: 10px;
+    font-size: 1rem;
     background-color: var(--secondary-color);
     padding: 1rem 2rem;
     color: var(--text-white-color);
@@ -111,10 +111,20 @@
 
 @media (min-width: 768px) {
 
-    .hero__banner p{
+    .hero__banner {
+        padding: 20vh 4em;
+    }
 
+    .hero__banner p{
+        font-size: 1.5rem;
         width: 50%;
     }
+
+    .hero__banner h2{
+        font-size: 2rem;
+        margin: 25px 0;
+    }
+
     .form{
         position: absolute;
         top: 50%;
@@ -125,6 +135,9 @@
         font-size: 1.4rem;
     }
 
+    .form__submit{
+        font-size: 1.2rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -132,5 +145,6 @@
     .form{
         top: 50%;
         right: 20%;
+        max-width: 400px;
     }
 }
