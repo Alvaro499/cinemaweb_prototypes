@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/movies/movies.css" />
+    <link rel="stylesheet" href="assets/css/movies/slider.css" />
+    <link rel="stylesheet" href="assets/css/movies/search.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+
+    <title>Document</title>
+
+
+</head>
+
+
+<body>
+
+    <div class="global-container">
+        <header id="global-navbar">
+
+            <div class="header-logo">
+                <img src="assets/logo/logo.svg" alt="logo">
+            </div>
+
+            <nav>
+
+                <label for="menu-toggle" class="menu-btn">
+                    <i class="material-symbols-outlined">menu</i>
+                    <span>Menú</span>
+                </label>
+
+                <input type="checkbox" id="menu-toggle" hidden>
+
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li><a href="movies.html">Ver Cartelera</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="">Crea una cuenta</a></li>
+                </ul>
+
+            </nav>
+
+            <button class="login-btn">Iniciar Sesión</button>
+
+        </header>
+
+        <main class="main">
+
+            <div class="header__background"></div>
+
+            <h2 class="slider__title">Últimos Estrenos:</h2>
+            <section class="slider__container">
+                <div id="slider" class="slider">
+
+                    <div class="slider__item">
+                        <div class="slider__img">
+                            <img src="assets/images/movies-posters/ballerina.jpg" alt="">
+                        </div>
+                        <div class="slider__content">
+                            <p>Ballerina</p>
+                            <button>Reservar Entradas</button>
+                        </div>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="slider__img">
+                            <img src="assets/images/movies-posters/fantastic_four.png" alt="">
+                        </div>
+                        <div class="slider__content">
+                            <p>Los Cuatro Fantásticos: Primeros Pasos</p>
+                            <button>Reservar Entradas</button>
+                        </div>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="slider__img">
+                            <img src="assets/images/movies-posters/superman_2025.png" alt="">
+                        </div>
+                        <div class="slider__content">
+                            <p>Superman (2025)</p>
+                            <button>Reservar Entradas</button>
+                        </div>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="slider__img">
+                            <img src="assets/images/movies-posters/sinners.png" alt="">
+                        </div>
+                        <div class="slider__content">
+                            <p>Sinners</p>
+                            <button>Reservar Entradas</button>
+                        </div>
+                    </div>
+
+
+                    <div class="slider__item">
+                        <div class="slider__img">
+                            <img src="assets/images/movies-posters/28-years-later.jpg" alt="">
+                        </div>
+                        <div class="slider__content">
+                            <p>28 Años Después</p>
+                            <button>Reservar Entradas</button>
+                        </div>
+                    </div>
+
+                    <div class="slider__item">
+                        <div class="slider__img">
+                            <img src="assets/images/movies-posters/the-ritual.jpg" alt="">
+                        </div>
+                        <div class="slider__content">
+                            <p>El Ritual</p>
+                            <button>Reservar Entradas</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="left__btn" class="slider__btn left__btn">
+                    <span class="material-symbols-outlined">
+                        arrow_left_alt
+                    </span>
+                </button>
+                <button id="right__btn" class="slider__btn right__btn">
+                    <span class="material-symbols-outlined">
+                        arrow_right_alt
+                    </span>
+                </button>
+            </section>
+
+            <!-- BUSCADOR DE PELÍCULAS -->
+
+            <section class="search__container">
+                <h2 class="search__title">Peliculas en cartelera:</h2>
+                <form class="search__form">
+
+                    <div class="search__genres">
+                        <div class="search__select-box" onclick="toggleGenreCheckboxes()">
+                            <select class="search__select">
+                                <option class="material-symbols-outlined">Filtrar</option>
+                            </select>
+                            <div class="search__over-select"></div>
+                        </div>
+
+                        <div id="search__checkboxes">
+                            <label for="genre-action">
+                                <input type="checkbox" id="genre-action" />
+                                Acción
+                            </label>
+
+                            <label for="genre-adventure">
+                                <input type="checkbox" id="genre-adventure" />
+                                Aventura
+                            </label>
+
+                            <label for="genre-kids">
+                                <input type="checkbox" id="genre-kids" />
+                                Infantiles
+                            </label>
+
+                            <label for="genre-comedy">
+                                <input type="checkbox" id="genre-comedy" />
+                                Comedia
+                            </label>
+                        </div>
+                    </div>
+
+                    <input type="search" id="search" class="search__input"
+                        placeholder="Busca cualquier película por nombre, fecha de lanzamiento, director...">
+                    <button type="submit" class="search__btn">
+                        <i class="material-symbols-outlined">search</i>
+                    </button>
+                </form>
+
+                <div class="cards__container">
+                    <div class="cards">
+                        <div class="card__item">
+                            <div class="card__image">
+                                <img src="assets/images/movies-posters/fantastic_four.png" alt="">
+                            </div>
+                            <div class="card__content">
+                                <p class="card__title">Fantastic Four</p>
+                                <button class="card__btn">Ver más</button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__image">
+                                <img src="assets/images/movies-posters/28-years-later.jpg" alt="">
+                            </div>
+                            <div class="card__content">
+                                <p class="card__title">28 Years Later</p>
+                                <button class="card__btn">Ver más</button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__image">
+                                <img src="assets/images/movies-posters/the-ritual.jpg" alt="">
+                            </div>
+                            <div class="card__content">
+                                <p class="card__title">The Ritual</p>
+                                <button class="card__btn">Ver más</button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__image">
+                                <img src="assets/images/movies-posters/ballerina.jpg" alt="">
+                            </div>
+                            <div class="card__content">
+                                <p class="card__title">Ballerina</p>
+                                <button class="card__btn">Ver más</button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__image">
+                                <img src="assets/images/movies-posters/superman_2025.png" alt="">
+                            </div>
+                            <div class="card__content">
+                                <p class="card__title">Superman 2025</p>
+                                <button class="card__btn">Ver más</button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__image">
+                                <img src="assets/images/movies-posters/sinners.png" alt="">
+                            </div>
+                            <div class="card__content">
+                                <p class="card__title">Sinners</p>
+                                <button class="card__btn">Ver más</button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__image">
+                                <img src="assets/images/movies-posters/fantastic_four.png" alt="">
+                            </div>
+                            <div class="card__content">
+                                <p class="card__title">Fantastic Four</p>
+                                <button class="card__btn">Ver más</button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__image">
+                                <img src="assets/images/movies-posters/alien_romulus.jpg" alt="">
+                            </div>
+                            <div class="card__content">
+                                <p class="card__title">Alien: Romulus</p>
+                                <button class="card__btn">Ver más</button>
+                            </div>
+                        </div>
+
+                        <div class="card__item">
+                            <div class="card__image">
+                                <img src="assets/images/movies-posters/mad_max_fury_Road_2015.png" alt="">
+                            </div>
+                            <div class="card__content">
+                                <p class="card__title">Mad Max: Fury Road (2015)</p>
+                                <button class="card__btn">Ver más</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </main>
+
+
+        <footer>
+
+            <section class="footer__header">
+                <div class="footer__header-title">
+                    <h4>Visítanos en nuestras redes sociales:</h4>
+                </div>
+                <div class="footer__header-social">
+                    <ul>
+                        <li>
+                            <a href="">📘</a>
+                        </li>
+                        <li>
+                            <a href="">📺</a>
+                        </li>
+                        <li>
+                            <a href="">❌</a>
+                        </li>
+                        <li>
+                            <a href="">📸</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="footer__main">
+                <div class="footer__content">
+
+                    <div class="footer__content-item footer__content-us">
+                        <h4 class="footer__content-title">Nos interesa tu opinión</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis elementum purus eu
+                            ultricies. Ut bibendum velit semper, consectetur magna.</p>
+                    </div>
+
+                    <div class="footer__content-item footer__content-links">
+                        <h4 class="footer__content-title">Más Información</h4>
+                        <ul>
+                            <li><a href="#">Registrarse como miembro</a></li>
+                            <li><a href="#">Centro de Ayuda</a></li>
+                            <li><a href="#">Política y Privacidad</a></li>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                        </ul>
+                    </div>
+
+                    <div class=" footer__content-item footer__content-contact">
+                        <h4 class="footer__content-title">Contáctanos</h4>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="material-symbols-outlined">location_on</i> Dirección
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+123456789">
+                                    <i class="material-symbols-outlined">call</i> Teléfono
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:correo@ejemplo.com">
+                                    <i class="material-symbols-outlined">mail</i> Correo electrónico
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="material-symbols-outlined">edit_note</i> Formulario de contacto
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer__">
+                <p> 2025 Todos los derechos reservados. CINETICOS</p>
+            </section>
+
+        </footer>
+    </div>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("global-navbar").style.top = "0";
+            } else {
+                document.getElementById("global-navbar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+    <script>
+        let slider = document.querySelector("#slider")
+        const leftBtn = document.querySelector("#left__btn");
+        const rightBtn = document.querySelector("#right__btn");
+
+        function NextItem() {
+            const firstItem = document.querySelectorAll(".slider__item")[0];
+            const itemWidth = firstItem.offsetWidth;
+
+            const sliderStyle = window.getComputedStyle(slider);
+            const gap = parseFloat(sliderStyle.gap) || 0;
+
+            const moveX = itemWidth + gap;
+
+            slider.style.transition = "transform 0.5s";
+            slider.style.transform = `translateX(-${moveX}px)`;
+
+            setTimeout(() => {
+                slider.style.transition = "none";
+                slider.appendChild(firstItem);
+                slider.style.transform = "translateX(0)";
+            }, 500);
+        }
+
+
+        function PrevItem() {
+            const items = document.querySelectorAll(".slider__item");
+            const lastItem = items[items.length - 1];
+            const itemWidth = lastItem.getBoundingClientRect().width;
+
+            const sliderStyle = window.getComputedStyle(slider);
+            const gap = parseFloat(sliderStyle.gap) || 0;
+
+            const moveX = itemWidth + gap;
+
+            slider.style.transition = "none";
+            slider.insertAdjacentElement("afterbegin", lastItem);
+            slider.style.transform = `translateX(-${moveX}px)`;
+
+            setTimeout(() => {
+                slider.style.transition = "all 0.5s";
+                slider.style.transform = "translateX(0)";
+            }, 10);
+        }
+
+
+
+        rightBtn.addEventListener("click", function () {
+            NextItem();
+        })
+
+        leftBtn.addEventListener("click", function () {
+            PrevItem();
+        })
+    </script>
+
+    <script>
+        let isGenresOpen = false;
+
+        function toggleGenreCheckboxes() {
+            const checkboxes = document.getElementById("search__checkboxes");
+
+            if (!isGenresOpen) {
+                checkboxes.style.display = "block";
+            } else {
+                checkboxes.style.display = "none";
+            }
+
+            isGenresOpen = !isGenresOpen;
+        }
+    </script>
+
+
+
+</body>
+
+
+
+
+</html>

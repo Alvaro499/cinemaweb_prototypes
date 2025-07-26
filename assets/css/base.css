@@ -66,7 +66,7 @@ ul, ol{
     list-style: none;
 }
 
-a, p, span{
+a, p, span, label, select, option{
     text-decoration: none;
     color: inherit;
     font-family: var(--font-body);
@@ -90,6 +90,7 @@ img {
 button {
   all: unset;
   cursor: pointer;
+  font-family: var(--font-body);
 }
 
 input, select{

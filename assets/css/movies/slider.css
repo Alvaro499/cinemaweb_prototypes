@@ -1,0 +1,140 @@
+.header__background{
+    width: 100%;
+    height: 65px;
+    background-color: var(--primary-color);
+}
+
+.slider__container{
+    width: 100%;
+    height: 75vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.slider__title{
+    background-color: var(--primary-color-dark);
+    color: var(--text-white-color);
+    padding: 2rem 0 0 2em;
+}
+
+.slider{
+    width: max-content;
+    height: 100%;
+    background-color: var(--primary-color-dark);
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    padding: 3rem 2rem 5rem 2rem;
+    
+}
+
+.slider__item{
+    width: 250px;
+    height: 100%;
+    position: relative;
+}
+
+
+.slider__img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.slider__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 50%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+}
+
+.slider__content p{
+    font-weight: bolder;
+}
+
+.slider__content button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.slider__content button:hover {
+    background-color: var(--primary-color);
+}
+
+
+
+.slider__btn{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    translate: ();
+    color: var(--text-white-color);
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 0.6rem;
+    font-size: 0.5;
+    margin: 0 1rem;
+    transition: transform  0.3s;
+    z-index: 5;
+}
+
+.slider__btn:hover{
+    transform: scale(1.2);
+}
+
+
+.right__btn{
+    right: 0;
+}
+
+.left__btn{
+    left: 0;
+}
+
+@media(min-width: 768px){
+    
+    
+    .slider__title{
+        font-size: 2rem;
+    }
+
+
+    .slider__item{
+        width: 300px;
+        height: 100%;
+    }
+
+
+
+}
+
+@media(min-width: 1024px){
+        
+    .slider__item{
+        width: 400px;
+    }
+
+    .slider__container{
+        height: 80vh;
+    }
+
+}
