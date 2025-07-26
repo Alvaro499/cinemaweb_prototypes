@@ -1,0 +1,186 @@
+.search__container {
+    width: 100%;
+    background:
+        linear-gradient(180deg,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.8) 50%,
+            rgba(0, 0, 0, 0.9) 100%),
+        url("../../images/banners/movies_gallery/movie_collage_vertical.jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 6rem 4rem;
+}
+
+.search__title{
+    color: var(--text-white-color);
+    margin-bottom: 75px;
+    padding-left: 2rem;
+    border-left: var(--secondary-color) solid 0.6rem;
+}
+
+
+.search__form {
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    grid-auto-rows: 40px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: sticky;
+    top: 70px;
+    z-index: 1000;
+    grid-template-areas:
+        "search_filter search_filter"
+        "search_input search_btn";
+}
+
+
+/* Contenedor del "Tag Select" */
+.search__genres {
+    height: 100%;
+    position: relative;
+    grid-area: search_filter;
+
+}
+
+.search__select-box select {
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    padding: 0.4rem;
+    background-color: var(--secondary-color);
+    color: var(--text-white-color);
+    text-align: center;
+}
+
+.search__select-box {
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+
+}
+
+
+.search__over-select {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#search__checkboxes {
+    min-width: max-content;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 5;
+}
+
+#search__checkboxes label {
+    display: block;
+    cursor: pointer;
+    padding: 0.3rem 0.5rem;
+    background-color: var(--background-text-white-color);
+    border-bottom: var(--text-white-color) solid 2px;
+}
+
+input[type="checkbox"] {
+    background-color: var(--text-white-color);
+}
+
+#search__checkboxes label:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-white-color);
+}
+
+.search__input {
+    padding: 0.4rem;
+    grid-area: search_input;
+
+
+}
+
+
+.search__btn {
+    background-color: var(--secondary-color);
+    color: var(--text-white-color);
+    border: none;
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    grid-area: search_btn;
+}
+
+
+/* Contenedor de Gallería */
+
+
+.cards__container {
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card__item {
+    background-color: rgba(var(--primary-color-rgb), 0.8);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.card__item:hover {
+    transform: translateY(-5px);
+}
+
+.card__content {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card__title {
+    font-weight: bold;
+    color: var(--text-white-color);
+}
+
+.card__btn {
+    background-color: var(--secondary-color);
+    color: var(--text-white-color);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card__btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
+
+
+@media (min-width: 768px) {
+    .search__form {
+        grid-template-columns: 1fr 5fr 0.5fr;
+        grid-template-areas: "search_filter search_input search_btn";
+        width: 75%;
+    }
+}
