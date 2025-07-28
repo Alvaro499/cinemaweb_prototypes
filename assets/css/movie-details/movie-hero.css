@@ -1,0 +1,145 @@
+.movie__hero {
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie__hero-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+
+.movie__hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background: linear-gradient(
+        to right,
+        rgba(var(--primary-color-dark-rgb), 1) 0%,
+        rgba(var(--primary-color-dark-rgb), 0.95) 80%,
+        rgba(var(--primary-color-dark-rgb), 0) 100%
+    );
+}
+
+.movie__hero-img img {
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 10%;
+    mask-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 1) 20%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+.movie__hero-content {
+    width: 100%;
+    height: 100%;
+    padding: 3rem 0 0 2rem;
+    font-size: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: left;
+    row-gap: 2rem;
+    font-weight: bolder;
+}
+
+.movie__hero-title {
+    color: var(--text-white-color);
+    font-size: 2rem;
+}
+
+.movie__hero-releasedate {
+    color: var(--text-white-color);
+    font-size: 1em;
+}
+
+.movie__hero-rating {
+    font-size: 0.8em;
+}
+
+
+.rating__title {
+    color: var(--text-white-color);
+    display: inline-block;
+    font-size: 1em;
+}
+
+.rating__stars {
+    display: inline-block;
+    color: var(--rating-comment-yellow-color);
+    font-size: 1.2em;
+}
+
+.movie__hero-btns {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.8rem;
+}
+
+.movie_btn {
+    font-size: 1em;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    color: var(--text-white-color);
+    font-weight: bolder;
+    transition: transform 0.3s;
+}
+
+.movie_btn:hover {
+    transform: scale(1.1);
+}
+
+.tickets__btn {
+    background-color: var(--secondary-color);
+}
+
+.trailer__btn {
+    background-color: red;
+
+}
+
+.review__btn {
+    background-color: var(--primary-color);
+}
+
+@media(min-width: 768px) {
+
+    .movie__hero {
+        height: 150vh;
+    }
+
+    .movie__hero-content {
+        padding: 4rem 0 0 6rem;
+        row-gap: 3rem;
+    }
+
+    .movie__hero-img img {
+        width: 50%;
+    }
+
+}
+
+
+@media(min-width: 1024px) {
+    .movie__hero-title {
+        font-size: 4rem;
+    }
+
+    .movie__hero-releasedate {
+        font-size: 1.2rem;
+    }
+
+    .movie__hero-rating {
+        font-size: 1.2rem;
+    }
+
+}

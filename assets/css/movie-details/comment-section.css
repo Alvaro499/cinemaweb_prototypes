@@ -1,0 +1,88 @@
+.movie__comments {
+    padding: 2rem;
+    background-color: var(--primary-color-dark);
+    color: var(--text-white-color);
+}
+
+.movie__comments-title h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.movie__comments-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.movie__comment-item {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: rgba(var(--secondary-color-rgb), 0.2);
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.movie__comment-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.movie__comment-body {
+    flex: 1;
+    /*
+    "Toma el espacio que queda dentro del contenedor pero no toma más ni empuja sus a los hermanos."
+
+
+    Short-hand:
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%; */
+}
+
+.movie__comment-date {
+    font-weight: bold;
+    color: var(--text-white-color);
+}
+
+.movie__comment-text {
+    margin: 0.5rem 0;
+    max-height: 150px;
+    overflow: hidden;
+
+
+}
+
+.movie__comment-rating {
+    color: var(--rating-comment-yellow-color);
+}
+
+.movie__comment-reply {
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.movie__comment-reply:hover {
+    background: var(--primary-color);
+    color: var(--text-white-color);
+}
+
+
+@media(min-width: 768px) {
+
+    .movie__comment-text {
+        max-height: 250px;
+    }
+}

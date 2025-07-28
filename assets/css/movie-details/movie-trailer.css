@@ -1,0 +1,71 @@
+.trailer__modal-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* Para sobreponer a cualquier otro elemento HTML */
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center; 
+    padding: 1rem;
+}
+
+.trailer__modal {
+    background-color: var(--background-text-white-color);
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    position: relative;
+}
+
+/* 
+Aspect-Ratio:
+
+    Si el ancho es 320px → (320 / 16) × 9 = 180px de altura.
+
+    Si el ancho es 800px → (800 / 16) × 9 = 450px de altura.
+
+*/
+
+
+.trailer__modal-video {
+    width: 100%;
+    height: 100%;
+    padding: 1rem; 
+    background-color: black;
+}
+
+
+
+.trailer__modal button {
+    color: var(--text-white-color);
+    background-color: rgba(255, 0, 0, 0.8);
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    top: -15px;
+    right: -15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+
+.trailer__modal button:hover {
+
+    background-color: var(--background-text-white-color);
+    color: red;
+    transform: scale(1.2);
+}
+

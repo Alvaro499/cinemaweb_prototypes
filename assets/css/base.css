@@ -38,11 +38,15 @@
 
   --primary-color-rgb: 10, 36, 114;
   --primary-color-dark-rgb: 0, 7, 45;
+  --secondary-color-rgb: 14, 107, 168;
+
 
 
   --text-white-color: #ffffff;
   --background-text-white-color: #f4f4f4;
   --text-dark-white-color: #B0B3B8;
+
+  --rating-comment-yellow-color: #E6B800;
 
   --font-title: 'Bebas Neue', sans-serif;
   --font-body: 'Open Sans', sans-serif;
@@ -60,6 +64,10 @@
 html, body{
     height: 100%; /*html: hijo del viewport (ventana del navegador)*/
     line-height: 1.4;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 ul, ol{
@@ -82,6 +90,12 @@ h1,h2,h3,h4,h5{
 }
 
 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+video, iframe {
   width: 100%;
   height: 100%;
   display: block;
@@ -112,4 +126,5 @@ select option[disabled] {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
 }
