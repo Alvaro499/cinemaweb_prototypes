@@ -1,9 +1,3 @@
-.header__background{
-    width: 100%;
-    height: 65px;
-    background-color: var(--primary-color);
-}
-
 .slider__container{
     width: 100%;
     height: 75vh;

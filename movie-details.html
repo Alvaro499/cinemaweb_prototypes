@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/movie-details/layout.css">
+    <link rel="stylesheet" href="assets/css/movie-details/movie-details.css" />
+    <link rel="stylesheet" href="assets/css/movie-details/movie-hero.css">
+    <link rel="stylesheet" href="assets/css/movie-details/comment-section.css">
+    <link rel="stylesheet" href="assets/css/movie-details/movie-trailer.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+
+    <title>Document</title>
+
+
+</head>
+
+
+<body>
+
+    <div class="global-container">
+        <header id="global-navbar">
+
+            <div class="header-logo">
+                <img src="assets/logo/logo.svg" alt="logo">
+            </div>
+
+            <nav>
+
+                <label for="menu-toggle" class="menu-btn">
+                    <i class="material-symbols-outlined">menu</i>
+                    <span>Menú</span>
+                </label>
+
+                <input type="checkbox" id="menu-toggle" hidden>
+
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca de</a></li>
+                    <li><a href="movies.html">Ver Cartelera</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="">Crea una cuenta</a></li>
+                </ul>
+
+            </nav>
+
+            <button class="login-btn">Iniciar Sesión</button>
+
+        </header>
+
+        <main class="main">
+
+            <div class="header__background"></div>
+
+            <section class="movie__hero">
+                <div class="movie__hero-gradient"></div>
+                <div class="movie__hero-img">
+                    <img src="assets/images/movies-posters/28-years-later.jpg" alt="">
+                </div>
+
+                <div class="movie__hero-content">
+                    <h2 class="movie__hero-title">Los Cuatro Fantásticos: Primeros Pasos</h2>
+                    <p class="movie__hero-releasedate">Fecha de Lanzamiento: <span> 21-05-2025</span></p>
+                    <div class="movie__hero-rating">
+                        <p class="rating__title">Califiación del público:</p>
+                        <div class="rating__stars">
+                            <i class="material-symbols-outlined">stars</i>
+                            <i class="material-symbols-outlined">stars</i>
+                            <i class="material-symbols-outlined">stars</i>
+                            <i class="material-symbols-outlined">stars</i>
+                            <i class="material-symbols-outlined">stars</i>
+                        </div>
+                    </div>
+                    <div class="movie__hero-btns">
+                        <button class="movie_btn tickets__btn">Reservar Entradas</button>
+                        <button id="trailer__btn" class="movie_btn trailer__btn">Ver Trailer</button>
+                        <button class="movie_btn review__btn"><a href="#movie__comments">Reviews</a></button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="movie__content">
+
+                <div class="movie__content-items">
+                    <h2 class="movie__content-title">Detalles de Película:</h2>
+                    <div class="movie__content-item">
+                        <h4 class="movie__content-label">Título:</h4>
+                        <p class="movie__content-text">Ballerina</p>
+                    </div>
+
+                    <div class="movie__content-item">
+                        <h4 class="movie__content-label">Categoría:</h4>
+                        <div class="movie__content-genres">
+                            <span class="movie__content-genre">Terror</span>
+                            <span class="movie__content-genre">Comedia</span>
+                            <span class="movie__content-genre">Acción</span>
+                        </div>
+                    </div>
+
+                    <div class="movie__content-item">
+                        <h4 class="movie__content-label">Fecha de Lanzamiento:</h4>
+                        <p class="movie__content-text">21-05-2025</p>
+                    </div>
+
+                    <div class="movie__content-item">
+                        <h4 class="movie__content-label">Director:</h4>
+                        <p class="movie__content-text">Danny Boyle</p>
+                    </div>
+
+                    <div class="movie__content-item">
+                        <h4 class="movie__content-label">Duración:</h4>
+                        <p class="movie__content-text">120 minutos</p>
+                    </div>
+
+                    <div class="movie__content-item">
+                        <h4 class="movie__content-label">Restricción:</h4>
+                        <p class="movie__content-text">Adultos</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section id="movie__comments" class="movie__comments">
+                <div class="movie__comments-title">
+                    <h2>Comentarios de Usuarios</h2>
+                </div>
+
+                <div class="movie__comments-items">
+                    <div class="movie__comment-item">
+                        <div class="movie__comment-profile">
+                            <img src="assets/user__profile/user1.jpg" alt="User profile">
+                        </div>
+
+                        <div class="movie__comment-body">
+                            <p class="movie__comment-date">27-07-2025</p>
+                            <p class="movie__comment-text">¡Una película increíble!</p>
+                            <div class="movie__comment-rating">
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                            </div>
+                        </div>
+
+                        <button class="movie__comment-reply">Reply</button>
+                    </div>
+
+                    <div class="movie__comment-item">
+                        <div class="movie__comment-profile">
+                            <img src="assets/user__profile/user2.jpg" alt="User profile">
+                        </div>
+
+                        <div class="movie__comment-body">
+                            <p class="movie__comment-date">27-07-2025</p>
+                            <p class="movie__comment-text">¡Una película increíble!</p>
+                            <div class="movie__comment-rating">
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                            </div>
+                        </div>
+
+                        <button class="movie__comment-reply">Reply</button>
+                    </div>
+
+
+                    <div class="movie__comment-item">
+                        <div class="movie__comment-profile">
+                            <img src="assets/user__profile/user3.jpg" alt="User profile">
+                        </div>
+
+                        <div class="movie__comment-body">
+                            <p class="movie__comment-date">27-07-2025</p>
+                            <p class="movie__comment-text">¡Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Nisi veritatis nostrum sed, dolore dolor eveniet culpa mollitia laudantium. Tempora
+                                exercitationem vero sit repellendus labore dolorum voluptates quidem repudiandae
+                                reprehenderit architecto.
+                                Fugit libero optio assumenda architecto ipsam maiores quidem repellat ratione quo
+                                commodi. Eaque voluptatum sunt dolorum minima iusto ut officiis, modi adipisci at
+                                accusantium nihil totam aliquid quisquam odit recusandae.
+                                Rem, quibusdam assumenda placeat explicabo ipsa provident, non nobis, impedit accusamus
+                                mollitia rerum dolorem cupiditate officiis excepturi. Vel sequi consequuntur, obcaecati
+                                natus delectus nostrum numquam excepturi nulla sint ipsam alias!
+                                Autem, rerum quisquam animi explicabo et repudiandae perspiciatis harum totam temporibus
+                                nihil maxime illum sit provident reiciendis. Pariatur tempora fugiat, minus eaque
+                                consequatur sed velit, sunt a, ab quas quos?
+                                Reiciendis consectetur quibusdam non quam et, atque animi. Possimus quibusdam reiciendis
+                                voluptatem fugit quis, quasi officiis doloremque? Voluptate facilis saepe reprehenderit,
+                                consectetur impedit molestiae deserunt necessitatibus doloremque voluptatibus, ex
+                                sapiente!</p>
+                            <div class="movie__comment-rating">
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                                <i class="material-symbols-outlined">star</i>
+                            </div>
+                        </div>
+
+                        <button class="movie__comment-reply">Reply</button>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </main>
+
+
+        <footer>
+
+            <section class="footer__header">
+                <div class="footer__header-title">
+                    <h4>Visítanos en nuestras redes sociales:</h4>
+                </div>
+                <div class="footer__header-social">
+                    <ul>
+                        <li>
+                            <a href="">📘</a>
+                        </li>
+                        <li>
+                            <a href="">📺</a>
+                        </li>
+                        <li>
+                            <a href="">❌</a>
+                        </li>
+                        <li>
+                            <a href="">📸</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="footer__main">
+                <div class="footer__content">
+
+                    <div class="footer__content-item footer__content-us">
+                        <h4 class="footer__content-title">Nos interesa tu opinión</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis elementum purus eu
+                            ultricies. Ut bibendum velit semper, consectetur magna.</p>
+                    </div>
+
+                    <div class="footer__content-item footer__content-links">
+                        <h4 class="footer__content-title">Más Información</h4>
+                        <ul>
+                            <li><a href="#">Registrarse como miembro</a></li>
+                            <li><a href="#">Centro de Ayuda</a></li>
+                            <li><a href="#">Política y Privacidad</a></li>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                        </ul>
+                    </div>
+
+                    <div class=" footer__content-item footer__content-contact">
+                        <h4 class="footer__content-title">Contáctanos</h4>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="material-symbols-outlined">location_on</i> Dirección
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+123456789">
+                                    <i class="material-symbols-outlined">call</i> Teléfono
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:correo@ejemplo.com">
+                                    <i class="material-symbols-outlined">mail</i> Correo electrónico
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="material-symbols-outlined">edit_note</i> Formulario de contacto
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer__">
+                <p> 2025 Todos los derechos reservados. CINETICOS</p>
+            </section>
+
+        </footer>
+
+        <section id="trailer__modal-container" class="trailer__modal-container">
+            <div class="trailer__modal">
+                <div class="trailer__modal-video">
+                    <iframe src="https://www.youtube.com/embed/hEJnMQG9ev8" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <button id="trailer__modal-close" class="material-symbols-outlined"
+                    title="Cerrar Trailer de YouTube">close</button>
+            </div>
+
+        </section>
+    </div>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("global-navbar").style.top = "0";
+            } else {
+                document.getElementById("global-navbar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+   
+    <script>
+        let isGenresOpen = false;
+
+        function toggleGenreCheckboxes() {
+            const checkboxes = document.getElementById("search__checkboxes");
+
+            if (!isGenresOpen) {
+                checkboxes.style.display = "block";
+            } else {
+                checkboxes.style.display = "none";
+            }
+
+            isGenresOpen = !isGenresOpen;
+        }
+    </script>
+
+    <script>
+        let trailerBtn = document.getElementById("trailer__btn");
+        let trailerModal = document.getElementById("trailer__modal-container");
+        let closeModalBtn = document.getElementById("trailer__modal-close");
+
+        function toggleTrailerModal() {
+            const isVisible = trailerModal.style.display === "flex"
+
+            if (isVisible) {
+                trailerModal.style.display = "none";
+                document.body.style.overflow = "auto";
+                stopYoutubeVideo();
+            } else {
+                trailerModal.style.display = "flex";
+                document.body.style.overflow = "hidden";
+            }
+
+        }
+
+        trailerBtn.addEventListener("click", toggleTrailerModal);
+        closeModalBtn.addEventListener("click", toggleTrailerModal);
+
+        trailerModal.addEventListener("click", (e) => {
+            if (e.target === trailerModal) {
+                toggleTrailerModal();
+                stopYoutubeVideo();
+
+            }
+        });
+
+
+        //Cerrar video del iframe también
+
+        function stopYoutubeVideo() {
+            const iframe = trailerModal.querySelector("iframe");
+            if (iframe) {
+                const src = iframe.src;
+                iframe.src = "";
+                iframe.src = src;
+            }
+        }
+
+    </script>
+
+
+
+</body>
+
+
+
+
+</html>
