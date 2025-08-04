@@ -11,10 +11,16 @@
     <link rel="stylesheet" href="assets/css/movie-details/movie-hero.css">
     <link rel="stylesheet" href="assets/css/movie-details/comment-section.css">
     <link rel="stylesheet" href="assets/css/movie-details/movie-trailer.css">
+    <link rel="stylesheet" href="assets/css/movie-details/cinema-features.css">
+    <link rel="stylesheet" href="assets/css/movie-details/cinema-tickets.css">
     <link rel="stylesheet" href="assets/css/footer.css">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <!-- Iconos sin relleno -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" /> -->
 
+    <!-- Iconos con relleno -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <title>Document</title>
 
@@ -78,7 +84,8 @@
                         </div>
                     </div>
                     <div class="movie__hero-btns">
-                        <button class="movie_btn tickets__btn">Reservar Entradas</button>
+                        <button class="movie_btn tickets__btn"><a href="#cinema__features">Reservar
+                                Entradas</a></button>
                         <button id="trailer__btn" class="movie_btn trailer__btn">Ver Trailer</button>
                         <button class="movie_btn review__btn"><a href="#movie__comments">Reviews</a></button>
                     </div>
@@ -124,6 +131,265 @@
                     </div>
                 </div>
 
+            </section>
+
+
+            <!-- Ver Funciones: -->
+            <section id="cinema__features" class="cinema__features" id="cinema__features">
+                <h2>Selecciona los Detalles de la Función</h2>
+
+                <form class="cinema__features--selectors">
+                    <div class="cinema__feature">
+                        <label for="feature-date-select">Fecha:</label>
+                        <select id="feature-date-select" name="feature-date-select"></select>
+                    </div>
+
+                    <div class="cinema__feature">
+                        <label for="feature-time">Hora:</label>
+                        <select id="feature-time" name="feature-time">
+                            <option value="">Selecciona una hora</option>
+                            <option value="18:00">18:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="22:00">22:00</option>
+                        </select>
+                    </div>
+
+                    <div class="cinema__feature">
+                        <label for="feature-language">Idioma:</label>
+                        <select id="feature-language" name="feature-language">
+                            <option value="">Selecciona un idioma</option>
+                            <option value="subtitulada">Subtitulada</option>
+                            <option value="doblada">Doblada</option>
+                            <option value="original">Original</option>
+                        </select>
+                    </div>
+
+                    <div class="cinema__feature">
+                        <label for="feature-format">Formato:</label>
+                        <select id="feature-format" name="feature-format">
+                            <option value="">Selecciona formato</option>
+                            <option value="2d">2D</option>
+                            <option value="3d">3D</option>
+                            <option value="imax">IMAX</option>
+                        </select>
+                    </div>
+
+                    <div class="cinema__no-functions">
+                        <p>❌ No hay funciones disponibles con esas características.</p>
+                    </div>
+                    <button type="button" id="show-feature-button" class="cinema__feature--btn">Mostrar Función</button>
+
+                </form>
+            </section>
+
+
+
+            <!-- Aquí va la opcion  de marcar los asientos -->
+            <section class="cinema__tickets--container">
+                <div class="cinema__tickets">
+                    <h2 class="cinema__tickets--title">Compra de Boletos Para:</h2>
+
+                    <p class="cinema__tickets--feedback">
+                        Función seleccionada: <strong>“Duna Parte 2”</strong><br>
+                        Sala: <strong>IMAX 3D</strong><br>
+                        Día: <strong>Jueves 8 de Agosto</strong><br>
+                        Hora: <strong>7:30 PM</strong><br>
+                        Duración: <strong>2h 45min</strong>
+                    </p>
+                    <!-- El numero de letra del asiento -->
+                    <div class="cinema__tickets--screen">
+                        <h4>Pantalla</h4>
+                    </div>
+
+                    <div class="cinema__ticket--seating">
+
+                        <div class="cinema__ticket--row">
+
+                            <div class="cinema__ticket--seats">
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">4</span>
+                                </button>
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">5</span>
+                                </button>
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">6</span>
+                                </button>
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">7</span>
+                                </button>
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">7</span>
+                                </button>
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">7</span>
+                                </button>
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">7</span>
+                                </button>
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">7</span>
+                                </button>
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">7</span>
+                                </button>
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">7</span>
+                                </button>
+
+                            </div>
+
+                            <span class="cinema__ticket--row-label">A</span>
+                        </div>
+
+                        <div class="cinema__ticket--row">
+
+                            <div class="cinema__ticket--seats">
+
+                                <button class="cinema__ticket--seat">
+
+                                </button>
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">9</span>
+                                </button>
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">10</span>
+                                </button>
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">11</span>
+                                </button>
+
+                            </div>
+
+                            <span class="cinema__ticket--row-label">B</span>
+                        </div>
+
+                        <div class="cinema__ticket--row">
+                            <div class="cinema__ticket--seats">
+                                <span>─── PASILLO ───</span>
+                            </div>
+                        </div>
+
+                        <div class="cinema__ticket--row">
+
+                            <div class="cinema__ticket--seats">
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">12</span>
+                                </button>
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">13</span>
+                                </button>
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">14</span>
+                                </button>
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">15</span>
+                                </button>
+
+                            </div>
+
+                            <span class="cinema__ticket--row-label">C</span>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="cinema__ticket--row">
+
+                            <div class="cinema__ticket--seats">
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">13</span>
+                                </button>
+
+                                <button class="cinema__ticket--seat">
+                                    <span class="material-symbols-outlined material-symbols-filled">
+                                        chair
+                                    </span>
+                                    <span class="cinema__ticket--number">14</span>
+                                </button>
+
+                            </div>
+
+                            <span class="cinema__ticket--row-label">C</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cinema__ticket-summary">
+                    <p class="cinema__ticket-total">Total: <span>₡12.000</span></p>
+                    <button class="cinema__ticket-btn">Continuar Compra</button>
+                </div>
             </section>
 
 
@@ -323,7 +589,7 @@
         }
     </script>
 
-   
+
     <script>
         let isGenresOpen = false;
 
@@ -381,6 +647,53 @@
                 iframe.src = src;
             }
         }
+
+    </script>
+
+
+    <script>
+        const select = document.getElementById('feature-date-select');
+        const days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+        const today = new Date();
+
+        for (let i = 0; i < 7; i++) {
+            const date = new Date(today);
+            date.setDate(today.getDate() + i);
+
+            const dayName = days[date.getDay()];
+            const day = date.getDate();
+            const month = date.getMonth() + 1;
+
+            const option = document.createElement('option');
+            option.value = `${day}/${month}`;
+            option.textContent = `${dayName}: ${day}/${month}`;
+            select.appendChild(option);
+        }
+    </script>
+
+
+    <script>
+
+        // 1. Obtener elementos relevantes
+        const dateSelect = document.getElementById('feature-date-select');
+        const timeSelect = document.getElementById('feature-time');
+        const seatsSection = document.querySelector('.cinema__tickets--container');
+
+        // 2. Mostrar/ocultar asientos según selección
+        function updateSeatsVisibility() {
+            if (dateSelect.value && timeSelect.value) {
+                seatsSection.style.display = 'block';
+            } else {
+                seatsSection.style.display = 'none';
+            }
+        }
+
+        // 3. Escuchar cambios
+        dateSelect.addEventListener('change', updateSeatsVisibility);
+        timeSelect.addEventListener('change', updateSeatsVisibility);
+
+        // Inicialmente ocultar
+        seatsSection.style.display = 'none';
 
     </script>
 
