@@ -1,5 +1,5 @@
 .movie__comments {
-    padding: 2rem;
+    padding: 4rem 2rem;
     background-color: var(--primary-color-dark);
     color: var(--text-white-color);
 }

@@ -1,0 +1,166 @@
+/* 
+     Conversión de metros a píxeles (escala proporcional)
+
+    | Tamaño real | Escala (1m = 50px) | Resultado en píxeles |
+| ----------- | ------------------ | -------------------- |
+| 10 metros   | 10 × 50            | **500 px** ✅ mínimo  |
+| 20 metros   | 20 × 50            | **1000 px** ✅ máximo |
+
+
+Si la pantalla  mide 500px = 10 metros, entonces la sala se contemplará en 500px + 200px, para agregar
+
+| Tipo de Sala     | Pantalla (px) | Asientos por fila aprox |
+| ---------------- | ------------- | ----------------------- |
+| Sala pequeña     | 300–400px     | 8–12                    |
+| Sala estándar    | 500–600px     | 14–20                   |
+| Sala grande/IMAX | 700–800px     | 24–30                   |
+
+
+
+*/
+
+
+
+
+.cinema__tickets--container{
+    overflow-x: auto;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.cinema__tickets{
+    margin: 0 auto;
+    width: 700px;
+    padding: 2rem 2rem;
+}
+
+.cinema__tickets--title{
+    text-align: left;
+}
+
+
+.cinema__tickets--feedback {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-body);
+  color: var(--primary-color-dark);
+  background-color: var(--background-text-white-color);
+  padding: 0.5rem 1rem;
+  border-left: 4px solid var(--secondary-color);
+  border-radius: 4px;
+}
+
+
+.cinema__tickets--screen {
+    width: 500px;
+    height: 50px;
+    background: grey;
+    margin: 1rem 0;
+  border-radius: 100% 100% 0 0 / 60% 60% 0 0;
+    margin: 1rem auto;
+    color: var(--background-text-white-color);
+
+
+}
+
+
+.cinema__ticket--seating{
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.cinema__ticket--row{
+    position: relative;
+    width: max-content;
+    padding: 0 2rem;
+}
+
+
+.cinema__ticket--seats{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+.cinema__ticket--seat {
+    width: 25px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cinema__ticket--row-label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    color: red;
+}
+
+
+/* .cinema__ticket--seat:hover {
+    background-color: rgba(var(--secondary-color-rgb), 0.7);
+} */
+
+
+.cinema__ticket--seat .material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 48;
+    color: grey;
+    font-size: 1.5rem;
+}
+
+.cinema__ticket--seat .cinema__ticket--number {
+    color: black;
+    font-weight: bold;
+    font-size: 0.8rem
+}
+
+.cinema__ticket-summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.2rem 1.5rem;
+  margin-top: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  font-family: var(--font-body);
+}
+
+.cinema__ticket-total {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color-dark);
+}
+
+.cinema__ticket-total span {
+  color: var(--secondary-color);
+}
+
+.cinema__ticket-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text-white-color);
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: var(--font-body);
+}
+
+.cinema__ticket-btn:hover {
+  background-color: var(--primary-color);
+}
